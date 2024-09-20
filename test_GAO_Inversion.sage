@@ -26,7 +26,7 @@ r= ceil(40/alpha)
 #output:b*rho
 
 
-#determino il prodotto b*rho che deve essere almeno pari a secPar
+#determino il prodotto b*rho che deve essere >= a secPar
 bRho=secPar
 def checkCond1(bRho):
 	if (1-(1-2^(-bRho))^r <= 2^(-secPar)):

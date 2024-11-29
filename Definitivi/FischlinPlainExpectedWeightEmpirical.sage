@@ -1,7 +1,6 @@
 ########################### DESCRIZIONE ################################################
-#	Fissata la coppia (b,rho) t.c. b * rho >= 129,
-#  calcoliamo il numero di uni che otterremmo con una proof di Fischlin,
-#	in cui abbiamo modificato "L_fischlin" in modo da farlo coincidere con "L_GAO".
+#	Fissata la coppia (b,rho,L) 
+#  calcoliamo il numero di uni che otterremmo con una proof di Fischlin
 ########################################################################################
 
 reset()

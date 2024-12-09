@@ -43,8 +43,13 @@ numberOfTests = 1000
 b_vector = [2,3,4,5,6,7,8]
 rho_vector = [64,43,32,26,22,19,16]
 
-L_vector = [448,344,288,260,242,228,208] # L_FISCHLIN_vector
-L_vector = [257,345,513,833,1409,2433,4097] # L_GAO_vector
+choice = "FISCHLIN"
+if (choice == "FISCHLIN"):
+	print("Computing #1s for Fischlin transform with its original L-value")
+	L_vector = [448,344,288,260,242,228,208] # L_FISCHLIN_vector
+else:
+	print("Computing #1s for Fischlin transform using GAO's L-value")
+	L_vector = [257,345,513,833,1409,2433,4097] # L_GAO_vector
 
 ell = [ceil(L_vector[i] /rho_vector[i]*1.) for i in range(len(L_vector))]
 
@@ -59,6 +64,6 @@ for bIndex,b in enumerate(b_vector):
 		meanWeightVector += vector(solCounterWeight) / numberOfTests * 1.
 
 	print("*"*50)
-	print("Fischlin-Plain with b=",b ," and rho =",rho)
+	print("Fischlin-Plain with b=",b ,"and rho =",rho)
 	numUni = sum([meanWeightVector[i] for i in range(rho)])
-	print("Numero di uni: ", numUni)
+	print("Experimental number of ones: ", numUni)

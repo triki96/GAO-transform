@@ -46,7 +46,7 @@ rho_vector = [64,43,32,26,22,19,16]
 choice = "FISCHLIN"
 if (choice == "FISCHLIN"):
 	print("Computing #1s for Fischlin transform with its original L-value")
-	L_vector = [448,344,288,260,242,228,208] # L_FISCHLIN_vector
+	L_vector = [448,344,288,260,242,228,208] # L_FISCHLIN_vector, (rho*b+5)
 else:
 	print("Computing #1s for Fischlin transform using GAO's L-value")
 	L_vector = [257,345,513,833,1409,2433,4097] # L_GAO_vector
